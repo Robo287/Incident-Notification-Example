@@ -105,6 +105,41 @@
                 </tr>
             </tbody>
         </table>
+        <div class="container py-5">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Type</th>
+                    <th>Condition</th>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>New Assigned</td>
+                        <td>A ticket was added to a analyst's queue that was previously unassigned</td>
+                    </tr>
+                    <tr>
+                        <td>Active Ticket</td>
+                        <td>Ticket is active and has been "touched" within the last 3 days</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>New Note</td>
+                        <td>When a new note is added to an in-progress incident</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>Warning</td>
+                        <td>No new activity has been done to the ticket for 3 days</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Critical</td>
+                        <td>No new activity has been done to the ticket for 7 days</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <h4>Purpose:</h4>
+            <p>To provide the analyst an "at-a-glance" view of their ticket queue to discern what needs to be attended to and what tickets have new notes that need to be reviewed</p>
+            <p>This can also provide managers a top level view of what tickets need to be addressed/have been sitting without being looked at.</p>
+        </div>
         <!-- Bootstrap js -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
